@@ -1,0 +1,130 @@
+--- create table for excel data sets
+CREATE TABLE jio_hotstart_raw_data (
+    Sr_No SERIAL PRIMARY KEY,
+    Customer_Name VARCHAR(255),
+    Email VARCHAR(255),
+    Phone_Number VARCHAR(15),
+    City VARCHAR(255),
+    State VARCHAR(255),
+    SignUp_Date DATE,
+    Subscription_Type VARCHAR(50),
+    Start_Date DATE,
+    End_Date DATE,
+    Subscription_Fee INT,
+    Renewal_Status VARCHAR(50),
+    Revenue INT,
+    Cost INT
+);
+
+select * from jio_hotstart_raw_data 
+drop table jio_hotstart_raw_data
+
+--- Create a normalize table and insert data from jio_hotstart_raw_data
+CREATE TABLE Customer (
+    Customer_ID SERIAL PRIMARY KEY,
+    Customer_Name VARCHAR(255),
+    Email VARCHAR(255),
+    Phone_Number VARCHAR(15),
+    City VARCHAR(255),
+    State VARCHAR(255)
+);
+INSERT INTO Customer (Customer_Name, Email, Phone_Number, City, State)
+SELECT DISTINCT Customer_Name, Email, Phone_Number, City, State
+FROM jio_hotstart_raw_data;
+
+select * from Customer
+
+CREATE TABLE Subscription (
+    Subscription_ID SERIAL PRIMARY KEY,
+    Subscription_Type VARCHAR(50),
+    Start_Date DATE,
+    End_Date DATE
+);
+
+INSERT INTO Subscription (Subscription_Type, Start_Date, End_Date)
+SELECT DISTINCT Subscription_Type, Start_Date, End_Date
+FROM jio_hotstart_raw_data;
+
+select * from Subscription
+
+
+CREATE TABLE Sales (
+    Sales_ID SERIAL PRIMARY KEY,
+    Customer_ID INT REFERENCES Customer(Customer_ID),
+    Subscription_ID INT REFERENCES Subscription(Subscription_ID),
+    Sales_Date DATE,
+    Subscription_Fee INT,
+    Revenue INT,
+    Cost INT,
+    Profit INT
+);
+INSERT INTO Sales (Customer_ID, Subscription_ID, Sales_Date, Subscription_Fee, Revenue, Cost, Profit)
+SELECT 
+    c.Customer_ID, 
+    s.Subscription_ID, 
+    j.SignUp_Date AS Sales_Date, 
+    j.Subscription_Fee, 
+    j.Revenue, 
+    j.Cost, 
+    j.Revenue - j.Cost AS Profit
+FROM jio_hotstart_raw_data j
+JOIN Customer c ON j.Customer_Name = c.Customer_Name AND j.Email = c.Email
+JOIN Subscription s ON j.Subscription_Type = s.Subscription_Type;
+
+select * from Sales
+
+CREATE TABLE Revenue (
+    Revenue_ID SERIAL PRIMARY KEY,
+    Subscription_ID INT REFERENCES Subscription(Subscription_ID),
+    Revenue INT
+);
+INSERT INTO Revenue (Subscription_ID, Revenue)
+SELECT s.Subscription_ID, j.Revenue
+FROM jio_hotstart_raw_data j
+JOIN Subscription s ON j.Subscription_Type = s.Subscription_Type;
+
+select * from Revenue
+
+CREATE TABLE Quarterly (
+    Quarterly_ID SERIAL PRIMARY KEY,
+    Year INT,
+    Quarter INT,
+    Total_Revenue INT,
+    Total_Profit INT
+);
+
+INSERT INTO Quarterly (Year, Quarter, Total_Revenue, Total_Profit)
+SELECT 
+    EXTRACT(YEAR FROM j.SignUp_Date) AS Year,
+    EXTRACT(QUARTER FROM j.SignUp_Date) AS Quarter,
+    SUM(j.Revenue) AS Total_Revenue,
+    SUM(j.Revenue - j.Cost) AS Total_Profit
+FROM jio_hotstart_raw_data j
+GROUP BY EXTRACT(YEAR FROM j.SignUp_Date), EXTRACT(QUARTER FROM j.SignUp_Date);
+
+select * from Quarterly
+
+---some change in tables
+ALTER TABLE Sales
+ADD Year INT,
+ADD Quarter INT;
+
+UPDATE Sales
+SET Year = EXTRACT(YEAR FROM Sales_Date),
+    Quarter = EXTRACT(QUARTER FROM Sales_Date);
+	
+ALTER TABLE Quarterly
+ADD CONSTRAINT uq_year_quarter UNIQUE (Year, Quarter);
+
+ALTER TABLE Sales
+ADD CONSTRAINT fk_sales_quarterly FOREIGN KEY (Year, Quarter) 
+REFERENCES Quarterly (Year, Quarter);
+
+SELECT s.Sales_ID, s.Year, s.Quarter, q.Total_Revenue, q.Total_Profit
+FROM Sales s
+JOIN Quarterly q ON s.Year = q.Year AND s.Quarter = q.Quarter;
+
+
+
+
+

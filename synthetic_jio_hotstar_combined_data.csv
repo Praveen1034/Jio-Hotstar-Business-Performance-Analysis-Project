@@ -1,0 +1,74 @@
+Sr.No.,Customer_Name,Email,Phone_Number,City,State,SignUp_Date,Subscription_Type,Start_Date,End_Date,Subscription_Fee,Renewal_Status,Revenue,Cost
+1,John Doe,john.doe@example.com,9876543210,Mumbai,Maharashtra,15-01-2023,Premium,15-01-2023,15-01-2024,499,Active,499,300
+2,Mary Smith,mary.smith@example.com,9123456789,Delhi,Delhi,01-02-2023,Basic,01-02-2023,01-02-2024,299,Active,299,200
+3,Raj Patel,raj.patel@example.com,9056782345,Ahmedabad,Gujarat,10-03-2023,Premium,10-03-2023,10-03-2024,499,Inactive,0,280
+4,Priya Gupta,priya.gupta@example.com,9001234567,Bangalore,Karnataka,22-04-2023,Basic,22-04-2023,22-04-2024,299,Active,299,150
+5,Arun Kumar,arun.kumar@example.com,9532147890,Kolkata,West Bengal,12-05-2023,Premium,12-05-2023,12-05-2024,499,Active,499,270
+6,Neha Singh,neha.singh@example.com,9965432109,Chennai,Tamil Nadu,09-06-2023,Basic,09-06-2023,09-06-2024,299,Inactive,0,180
+7,Aakash Sharma,aakash.sharma@example.com,9876512345,Pune,Maharashtra,01-07-2023,Premium,01-07-2023,01-07-2024,499,Inactive,0,300
+8,Meera Joshi,meera.joshi@example.com,9832105647,Jaipur,Rajasthan,19-08-2023,Basic,19-08-2023,19-08-2024,299,Active,299,190
+9,Sanjay Verma,sanjay.verma@example.com,9021345678,Lucknow,Uttar Pradesh,05-09-2023,Premium,05-09-2023,05-09-2024,499,Active,499,310
+10,Rita Kapoor,rita.kapoor@example.com,9445678901,Chandigarh,Chandigarh,15-10-2023,Basic,15-10-2023,15-10-2024,299,Active,299,200
+11,Anil Mehta,anil.mehta@example.com,9331234567,Surat,Gujarat,20-11-2023,Premium,20-11-2023,20-11-2024,499,Active,499,280
+12,Sheetal Agarwal,sheetal.agarwal@example.com,9786543210,Vadodara,Gujarat,01-12-2023,Basic,01-12-2023,01-12-2024,299,Inactive,299,190
+13,Sunil Mehta,sunil.mehta@example.com,9512468745,Jaipur,Rajasthan,25-01-2023,Premium,25-01-2023,25-01-2024,499,Active,499,250
+14,Divya Jain,divya.jain@example.com,9123567890,Hyderabad,Telangana,10-02-2023,Basic,10-02-2023,10-02-2024,299,Active,299,170
+15,Mohan Reddy,mohan.reddy@example.com,9912345678,Bengaluru,Karnataka,30-03-2023,Premium,30-03-2023,30-03-2024,499,Active,499,260
+16,Shweta Singh,shweta.singh@example.com,9065789012,Mumbai,Maharashtra,18-04-2023,Basic,18-04-2023,18-04-2024,299,Active,299,180
+17,Vijay Yadav,vijay.yadav@example.com,9324567890,Lucknow,Uttar Pradesh,05-05-2023,Premium,05-05-2023,05-05-2024,499,Active,499,300
+18,Priyanka Verma,priyanka.verma@example.com,9345678123,Surat,Gujarat,11-06-2023,Basic,11-06-2023,11-06-2024,299,Active,299,200
+19,Rajesh Mehta,rajesh.mehta@example.com,9032145678,Pune,Maharashtra,15-07-2023,Premium,15-07-2023,15-07-2024,499,Active,499,270
+20,Komal Jain,komal.jain@example.com,9871234567,Chennai,Tamil Nadu,10-08-2023,Basic,10-08-2023,10-08-2024,299,Inactive,0,190
+21,Ankur Singh,ankur.singh@example.com,9913574680,Delhi,Delhi,12-09-2023,Premium,12-09-2023,12-09-2024,499,Active,499,310
+22,Sunita Rani,sunita.rani@example.com,9987665432,Chandigarh,Chandigarh,30-10-2023,Basic,30-10-2023,30-10-2024,299,Active,299,180
+23,Shubham Thakur,shubham.thakur@example.com,9865432109,Kolkata,West Bengal,07-11-2023,Premium,07-11-2023,07-11-2024,499,Active,499,260
+24,Aishwarya Rao,aishwarya.rao@example.com,9516782345,Bangalore,Karnataka,22-12-2023,Basic,22-12-2023,22-12-2024,299,Active,299,200
+25,Sumit Kapoor,sumit.kapoor@example.com,9801234567,Mumbai,Maharashtra,20-01-2023,Premium,20-01-2023,20-01-2024,499,Active,499,280
+26,Rani Sethi,rani.sethi@example.com,9567123456,Surat,Gujarat,12-02-2023,Basic,12-02-2023,12-02-2024,299,Active,299,170
+27,Anshika Pandey,anshika.pandey@example.com,9356781234,Pune,Maharashtra,25-03-2023,Premium,25-03-2023,25-03-2024,499,Active,499,260
+28,Arvind Sharma,arvind.sharma@example.com,9871234567,Jaipur,Rajasthan,18-04-2023,Basic,18-04-2023,18-04-2024,299,Active,299,190
+29,Alok Pandey,alok.pandey@example.com,9976543210,Delhi,Delhi,25-05-2023,Premium,25-05-2023,25-05-2024,499,Active,499,280
+30,Vinita Mishra,vinita.mishra@example.com,9312465789,Kolkata,West Bengal,01-06-2023,Basic,01-06-2023,01-06-2024,299,Active,299,200
+31,Kunal Sharma,kunal.sharma@example.com,9654321078,Lucknow,Uttar Pradesh,10-07-2023,Premium,10-07-2023,10-07-2024,499,Inactive,0,270
+32,Harish Gupta,harish.gupta@example.com,9765432109,Bangalore,Karnataka,14-08-2023,Basic,14-08-2023,14-08-2024,299,Active,299,180
+33,Neeraj Yadav,neeraj.yadav@example.com,9654321098,Pune,Maharashtra,10-09-2023,Premium,10-09-2023,10-09-2024,499,Active,499,260
+34,Radhika Jain,radhika.jain@example.com,9321123456,Mumbai,Maharashtra,20-10-2023,Basic,20-10-2023,20-10-2024,299,Active,299,190
+35,Gaurav Singh,gaurav.singh@example.com,9456781234,Jaipur,Rajasthan,15-11-2023,Premium,15-11-2023,15-11-2024,499,Active,499,280
+36,Tanya Sharma,tanya.sharma@example.com,9512468790,Delhi,Delhi,04-12-2023,Basic,04-12-2023,04-12-2024,299,Inactive,0,150
+37,Rajeev Bhatia,rajeev.bhatia@example.com,9801234567,Mumbai,Maharashtra,05-01-2023,Premium,05-01-2023,05-01-2024,499,Active,499,300
+38,Priya Arora,priya.arora@example.com,9812468790,Delhi,Delhi,14-02-2023,Basic,14-02-2023,14-02-2024,299,Active,299,150
+39,Aman Yadav,aman.yadav@example.com,9912543678,Lucknow,Uttar Pradesh,22-03-2023,Premium,22-03-2023,22-03-2024,499,Active,499,270
+40,Ananya Roy,ananya.roy@example.com,9967832540,Kolkata,West Bengal,18-04-2023,Basic,18-04-2023,18-04-2024,299,Active,299,180
+41,Sahil Mehra,sahil.mehra@example.com,9032145678,Ahmedabad,Gujarat,07-05-2023,Premium,07-05-2023,07-05-2024,499,Active,499,280
+42,Neelam Sharma,neelam.sharma@example.com,9576123456,Pune,Maharashtra,01-06-2023,Basic,01-06-2023,01-06-2024,299,Inactive,0,190
+43,Gaurav Raj,gaurav.raj@example.com,9445678231,Jaipur,Rajasthan,14-07-2023,Premium,14-07-2023,14-07-2024,499,Active,499,310
+44,Sweta Singh,sweta.singh@example.com,9732145680,Chennai,Tamil Nadu,21-08-2023,Basic,21-08-2023,21-08-2024,299,Active,299,190
+45,Rahul Joshi,rahul.joshi@example.com,9809876543,Kolkata,West Bengal,10-09-2023,Premium,10-09-2023,10-09-2024,499,Inactive,0,250
+46,Tanvi Verma,tanvi.verma@example.com,9638527410,Pune,Maharashtra,25-10-2023,Basic,25-10-2023,25-10-2024,299,Active,299,170
+47,Vishal Patel,vishal.patel@example.com,9098765432,Delhi,Delhi,02-11-2023,Premium,02-11-2023,02-11-2024,499,Active,499,280
+48,Neha Kapoor,neha.kapoor@example.com,9823456789,Mumbai,Maharashtra,10-12-2023,Basic,10-12-2023,10-12-2024,299,Inactive,0,150
+49,Rohit Kumar,rohit.kumar@example.com,9998765432,Ahmedabad,Gujarat,15-01-2023,Premium,15-01-2023,15-01-2024,499,Active,499,290
+50,Priya Singh,priya.singh@example.com,9412384756,Lucknow,Uttar Pradesh,01-02-2023,Basic,01-02-2023,01-02-2024,299,Inactive,0,180
+51,Mohit Reddy,mohit.reddy@example.com,9546234789,Chennai,Tamil Nadu,25-03-2023,Premium,25-03-2023,25-03-2024,499,Active,499,260
+52,Suman Patel,suman.patel@example.com,9365123456,Jaipur,Rajasthan,10-04-2023,Basic,10-04-2023,10-04-2024,299,Active,299,200
+53,Anish Yadav,anish.yadav@example.com,9112345678,Bangalore,Karnataka,05-05-2023,Premium,05-05-2023,05-05-2024,499,Active,499,280
+54,Priya Jain,priya.jain@example.com,9445678901,Pune,Maharashtra,20-06-2023,Basic,20-06-2023,20-06-2024,299,Active,299,190
+55,Jatin Sharma,jatin.sharma@example.com,9612345678,Kolkata,West Bengal,12-07-2023,Premium,12-07-2023,12-07-2024,499,Active,499,270
+56,Rani Deshmukh,rani.deshmukh@example.com,9776543210,Mumbai,Maharashtra,19-08-2023,Basic,19-08-2023,19-08-2024,299,Inactive,0,160
+57,Karan Yadav,karan.yadav@example.com,9871234789,Surat,Gujarat,22-09-2023,Premium,22-09-2023,22-09-2024,499,Active,499,300
+58,Ruchi Sinha,ruchi.sinha@example.com,9887456123,Delhi,Delhi,10-10-2023,Basic,10-10-2023,10-10-2024,299,Active,299,180
+59,Tarun Sharma,tarun.sharma@example.com,9056123456,Chennai,Tamil Nadu,18-11-2023,Premium,18-11-2023,18-11-2024,499,Active,499,270
+60,Anjali Rao,anjali.rao@example.com,9345678910,Jaipur,Rajasthan,02-12-2023,Basic,02-12-2023,02-12-2024,299,Inactive,0,170
+61,Arvind Patel,arvind.patel@example.com,9365079123,Lucknow,Uttar Pradesh,20-01-2023,Premium,20-01-2023,20-01-2024,499,Active,499,280
+62,Vishnu Gupta,vishnu.gupta@example.com,9123456780,Ahmedabad,Gujarat,15-02-2023,Basic,15-02-2023,15-02-2024,299,Inactive,0,160
+63,Pooja Mehta,pooja.mehta@example.com,9706543210,Mumbai,Maharashtra,02-03-2023,Premium,02-03-2023,02-03-2024,499,Active,499,290
+64,Arvind Mehta,arvind.mehta@example.com,9887456234,Bangalore,Karnataka,18-04-2023,Basic,18-04-2023,18-04-2024,299,Active,299,180
+65,Shruti Jain,shruti.jain@example.com,9826123456,Delhi,Delhi,22-05-2023,Premium,22-05-2023,22-05-2024,499,Active,499,280
+66,Ramesh Yadav,ramesh.yadav@example.com,9067532189,Chennai,Tamil Nadu,14-06-2023,Basic,14-06-2023,14-06-2024,299,Active,299,190
+67,Vivek Agarwal,vivek.agarwal@example.com,9876453120,Kolkata,West Bengal,06-07-2023,Premium,06-07-2023,06-07-2024,499,Active,499,270
+68,Sneha Verma,sneha.verma@example.com,9756342108,Delhi,Delhi,12-08-2023,Basic,12-08-2023,12-08-2024,299,Inactive,0,160
+69,Ankit Singh,ankit.singh@example.com,9065324789,Pune,Maharashtra,02-09-2023,Premium,02-09-2023,02-09-2024,499,Active,499,250
+70,Rekha Sharma,rekha.sharma@example.com,9923456789,Bangalore,Karnataka,22-10-2023,Basic,22-10-2023,22-10-2024,299,Active,299,190
+71,Arun Kumar,arun.kumar@example.com,9308765432,Ahmedabad,Gujarat,11-11-2023,Premium,11-11-2023,11-11-2024,499,Active,499,300
+72,Meenakshi Verma,meenakshi.verma@example.com,9036471829,Lucknow,Uttar Pradesh,05-12-2023,Basic,05-12-2023,05-12-2024,299,Inactive,0,150
+73,Rajesh Kumar,rajesh.kumar@example.com,9635214789,Jaipur,Rajasthan,25-01-2023,Premium,25-01-2023,25-01-2024,499,Active,499,280
